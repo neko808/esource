@@ -1,0 +1,33 @@
+.wrapper{
+	max-width: 260px;
+	width: 100%;
+	height: auto;
+	padding: 38px;
+	.barra{
+		h3{
+			font-size: 18px;
+			font-weight: 700;
+			font-family: 'Poppins', sans-serif;
+  			letter-spacing: -0.05px;
+  			margin-bottom: 10px
+		}
+		width: 100%;
+		.boxes{
+			margin-bottom: 10px;
+			a{
+				text-decoration: none;
+				.author-info{
+					color: #a6a9ac;
+					display: block;
+					font-size: 15px;
+					margin-bottom: 2px;
+					transition: all 0.2s ease-in-out;
+					&:hover{
+						color: #2487FC;
+					}
+				}
+			}
+
+		}
+	}
+}

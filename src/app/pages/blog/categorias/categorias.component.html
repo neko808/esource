@@ -1,0 +1,124 @@
+<div class="space"></div>
+
+<div class="slider">
+    <div class="box">
+
+<div class="wrapper">
+        
+            <div class="info">
+                <div class="title">
+                    <h2>Nuestro Blog</h2>
+                    <h3>{{ category }}</h3>
+
+                </div>
+            </div>
+        
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- MAIN -->
+<main>
+    <div class="container">
+        <div class="row">
+
+            <!-- ARTICLES -->
+            <div class="col-lg-8 col-xs-12">
+                <section class="articles">
+
+            <article class="blue-article" *ngFor="let data of myArray | paginate: {
+                                                      itemsPerPage: 3, currentPage: page,
+                                                      totalItems: itemsBlog };">
+                        <div class="articles-header">
+                            <time>{{ data.fecha | date:'dd/MM/yyyy' }}</time>
+                            <span class="articles-header-tag-blue" 
+                            *ngIf='data?.relevante===true;'>relevante</span>
+
+                            <span class="articles-header-category">
+                                <a class="blue">{{ data.category.name }}</a>
+                            </span> 
+
+                        </div>
+                        <div class="articles-content">
+                            <h1><a title="">{{ data.title }}</a></h1>
+
+            <div *ngIf="data.image">
+              <img
+                src="{{ data.image.url }}"
+                alt="foto"
+                width="100%"
+              />
+            </div>
+                    <h3 class="little">{{ data.description }}</h3>
+                    <p [innerHTML]="data.content | filter:90">{{ data.content | filter:90 }}</p>
+                            
+
+                        </div>
+                        <div class="articles-footer">
+<!--                             <ul class="articles-footer-info">
+                                <li><a href="#" class="light-link" title=""><i class="pe-7s-comment"></i> 7 Respuestas</a>
+                                </li>
+                                <li><a href="#" class="light-link" title=""><i class="pe-7s-like"></i> 1221</a></li>
+                            </ul> -->
+
+                            <a [routerLink]="['/detalle',data.id,data.slug]" class="btn">Leer más</a>
+                            
+
+                        </div>
+                    </article>
+
+                    <pagination-controls (pageChange)="page = $event;onPageChange($event)"></pagination-controls>
+
+
+                </section>
+            </div>
+
+            <!-- AUTHOR -->
+            <div class="aside-blocks col-lg-4 col-xs-12">
+                <aside class="author">
+                    <div class="barra">
+                        <h2>Publicaciones Relevantes</h2>
+                        <div *ngFor="let data of filterRelevante(datas); index as i" class="mylink">
+                            <a [routerLink]="['/detalle',data.id,data.slug]">
+                               <span class="author-info">{{ data.title }}</span>  
+                            </a>
+                        </div>
+                    </div>
+<!--                     <div class="social">
+                        <a href="#" title="Twitter"><i class="icon-social_twitter_circle"></i></a>
+                        <a href="#" title="Github"><i class="icon-social_github_circle"></i></a>
+                        <a href="#" title="LinkedIn"><i class="icon-social_linkedin_circle"></i></a>
+                    </div> -->
+<!--                     <ul class="author-nav">
+                        <li><a href="#" title=""><i class="pe-7s-bookmarks"></i> Publicaciones Recientes</a></li>
+                        <li><a href="#" title=""><i class="pe-7s-paper-plane"></i>Twitter</a></li>
+                    </ul> -->
+                </aside>
+
+                <aside class="categories">
+                    <h2 class="aside-title">Categorias</h2>
+                    <ul *ngFor="let categorie of categories; index as i">
+                        <li class="nav-elipse-blue"><a [routerLink]="['/categorias',categorie]" (click)="reloadPage()" title="{{ categorie }}">{{ categorie }}</a></li>
+
+                    </ul>
+                </aside>
+
+<!--                 <aside class="last-project">
+                    <h2 class="aside-title">Noticia Relevante</h2>
+                    <div class="last-project-one">
+                        <h3 class="h4"><a class="work" href="#">Google Workspace</a></h3>
+                        <time datetime="2016-12-31T23:59:59Z">Febrero 18, 2021</time>
+                        <p class="font-primary">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Ex, tempora aliquam.... </p>
+                        <a href="#" title="Watch it" class="btn btn-small">Ver más</a>
+                    </div>
+                </aside> -->
+
+            </div>
+        </div>
+    </div>
+</main>
+<!-- end MAIN -->
+

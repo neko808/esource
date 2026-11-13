@@ -1,0 +1,344 @@
+.footer{
+	 max-width: 1124px;
+	 width: 100%;
+	 height: auto;
+	 margin: 0 auto;
+}
+
+.fondo8{
+	background: #292d39;
+	width: 100%;
+	height: auto;
+}
+
+footer{
+	.flex21{
+		ul{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 40px 0;
+			li{
+				list-style-type: none;
+				display: inline-block;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 23px;
+				margin: 32px 32px 0;
+				border-bottom: 1px solid transparent;
+				transition: all .2s linear;
+				cursor: pointer;
+				&:hover{
+					border-bottom: 1px solid #2487FC;
+				}
+				h3{
+					font-family: 'Poppins', helvetica, arial, sans-serif;
+					font-weight: 700;
+					font-size: 15px;
+					// color: #667399;
+					color: #737e9e;
+					letter-spacing: 0em;
+					transition: all .2s linear;
+				}
+				&:hover h3{
+					color: #2487FC;
+				}
+				a{
+					text-decoration: none;
+				}
+			}
+			
+		}
+	}
+	.w100{
+		.title{
+			text-align: center;
+			h3{
+				font-family: 'Poppins', helvetica, arial, sans-serif;
+				font-weight: 700;
+				color: #131529;
+				font-size: 28px;
+			    line-height: 36px;
+			    padding: 60px 0 20px 0;
+			    margin-bottom: 28px;
+			}
+		}
+		.pie{
+			text-align: center;
+			padding: 20px 0;
+			h4{
+				font-family: 'Poppins', helvetica, arial, sans-serif;
+				font-weight: 400;
+				font-size: 0.8em;
+				color: #737e9e;
+				letter-spacing: 0em;
+			}
+		}
+	}
+}
+
+.fondo3{
+	width: 100%;
+	height: auto;
+	padding: 30px 0;
+	background: #ebecf0;
+}
+
+.footer-flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	&.gray{
+		padding-top: 60px;
+		margin: 40px 5px 0 5px;
+	}
+	.social{
+		flex: 0 1 19.5%;
+		display: inline-block;
+		text-align: center;
+		margin:0;
+		padding: 10px 0;
+		cursor: pointer;
+		img{
+			width: 28px;
+			height: auto;
+			transition: all .2s linear;
+			line-height: 2.15em !important;
+			&.blue{
+				opacity: 0;
+				position: absolute;
+				z-index: 10;
+			}
+		}
+		&:hover .blue{
+			opacity: 1
+		}
+	}
+}
+
+// .logos-flex-container{
+// 	padding: 0;
+//   	margin: 0;
+//   	list-style: none;
+// 	display: flex;
+// 	flex-flow: row wrap;
+// 	justify-content: center;
+//   	margin-bottom: 130px;
+// 	.logos-flex-item{
+// 		display: flex;
+// 		justify-content: center;
+// 		align-items: center;
+// 		width: 250px;
+// 		height: 80px;
+// 		margin-top: 40px;
+// 		position: relative;
+// 	}
+// 	.logos-flex-item img {
+// 	  transition: opacity 0.1s ease-in-out;
+// 	}
+
+// 	.logos-flex-item img.top:hover {
+// 	  opacity: 0;
+// 	}
+// 	.logos-flex-item a:hover .baterias-color,
+// 	.logos-flex-item a:hover .gala-color,
+// 	.logos-flex-item a:hover .roots-color,
+// 	.logos-flex-item a:hover .epasa-color,
+// 	.logos-flex-item a:hover .banesco-color,
+// 	.logos-flex-item a:hover .iesa-color,
+// 	.logos-flex-item a:hover .hyundai-color,
+// 	.logos-flex-item a:hover .medcom-color,
+// 	.logos-flex-item a:hover .quimmco-color,
+// 	.logos-flex-item a:hover .alqueria-color,
+// 	.logos-flex-item a:hover .hornitos-color,
+// 	.logos-flex-item a:hover .genomica-color,
+// 	.logos-flex-item a:hover .juan-valdez-color,
+// 	.logos-flex-item a:hover .pit-color
+// 	{
+// 		display: block;
+// 	}
+// }
+
+
+// @media screen and (max-width: 768px) {
+//   .logos-flex-container {
+//   	padding: 0 26px;
+//   }
+// }
+
+// @media screen and (max-width: 480px) {
+//   .logos-flex-item {
+//   	text-align: center;
+//   	width: 100%;
+//   }
+// }
+
+// /*   Estilos para Logos   */
+// .baterias{
+// 	width: 140px;
+// 	opacity: 0.6;
+// }
+
+// .baterias-color{
+//   display: none;
+//   position: absolute;
+//   width: 140px;
+//   z-index: 10;
+// }
+
+// .gala{
+// 	width: 83px;
+// 	opacity: 0.6;
+// }
+
+// .gala-color{
+//   display: none;
+//   position: absolute;
+//   width: 83px;
+//   z-index: 10;
+// }
+
+// .roots{
+// 	width: 90px;
+// 	opacity: 0.6;
+// }
+
+// .roots-color{
+//   display: none;
+//   position: absolute;
+//   width: 90px;
+//   z-index: 10;
+// }
+
+// .epasa{
+// 	width: 130px;
+// 	opacity: 0.6;
+// }
+
+// .epasa-color{
+//   display: none;
+//   position: absolute;
+//   width: 130px;
+//   z-index: 10;
+// }
+
+// .banesco{
+// 	width: 130px;
+// 	opacity: 0.6;
+// }
+
+// .banesco-color{
+//   display: none;
+//   position: absolute;
+//   width: 130px;
+//   z-index: 10;
+// }
+
+// .iesa{
+// 	width: 80px;
+// 	opacity: 0.6;
+// }
+
+// .iesa-color{
+//   display: none;
+//   position: absolute;
+//   width: 80px;
+//   z-index: 10;
+// }
+
+// .hyundai{
+// 	width: 140px;
+// 	opacity: 0.6;
+// }
+
+// .hyundai-color{
+//   display: none;
+//   position: absolute;
+//   width: 140px;
+//   z-index: 10;
+// }
+
+// .medcom{
+// 	width: 122px;
+// 	opacity: 0.6;
+// }
+
+// .medcom-color{
+//   display: none;
+//   position: absolute;
+//   width: 122px;
+//   z-index: 10;
+// }
+
+// .quimmco{
+// 	width: 120px;
+// 	opacity: 0.6;
+// }
+
+// .quimmco-color{
+//   display: none;
+//   position: absolute;
+//   width: 120px;
+//   z-index: 10;
+// }
+
+// .alqueria{
+// 	width: 124px;
+// 	opacity: 0.6;
+// }
+
+// .alqueria-color{
+//   display: none;
+//   position: absolute;
+//   width: 124px;
+//   z-index: 10;
+// }
+
+// .hornitos{
+// 	width: 110px;
+// 	opacity: 0.6;
+// }
+
+// .hornitos-color{
+//   display: none;
+//   position: absolute;
+//   width: 110px;
+//   z-index: 10;
+// }
+// .genomica{
+// 	width: 160px;
+// 	opacity: 0.6;
+// }
+
+// .genomica-color{
+//   display: none;
+//   position: absolute;
+//   width: 160px;
+//   z-index: 10;
+// }
+// .juan-valdez{
+// 	width: 150px;
+// 	opacity: 0.6;
+// }
+
+// .juan-valdez-color{
+//   display: none;
+//   position: absolute;
+//   width: 150px;
+//   z-index: 10;
+// }
+// .pit{
+// 	width: 120px;
+// 	opacity: 0.6;
+// }
+
+// .pit-color{
+//   display: none;
+//   position: absolute;
+//   width: 120px;
+//   z-index: 10;
+// }
+
+// .myclass{
+// 	color:white;
+// }

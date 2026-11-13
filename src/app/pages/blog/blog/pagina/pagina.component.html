@@ -1,0 +1,311 @@
+<div class="space"></div>
+
+<!-- MAIN -->
+<main>
+
+    <!-- ARTICLE BLOG POST -->
+    <section class="articles articles-blog-post">
+        <article class="articles-blog-post" *ngFor="let data of datas; index as i">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-xs-12">
+
+                        <!-- TEXT ARTICLE -->
+                        <div class="articles-header">
+                            <div class="box">
+                                <time datetime="2016-10-11">{{ data.fecha | date:'dd/MM/yyyy' }}</time>
+                                <span class="articles-header-tag-green">Nuevo</span>
+                            </div>
+                            <div class="box">
+                                <a [routerLink]="['/blog']">
+                                    <div class="back">
+                                        <img class="garrow" src="../../../../../assets/img/blog/detalles/g10arrow.svg" alt="volver">
+                                        volver
+                                    </div> 
+                                </a>
+                            </div>
+                            
+<!--                             <span class="articles-header-category">
+                                <a href="#" class="green" title="">{{ data.category.name }}</a>
+                            </span> -->
+                        </div>
+                        <div class="articles-content">
+                            <h1 class="articles-content-blog-post-title"><a title="Tendencias de Transformacion Digital">{{ data.title }}</a></h1>
+
+                            <div class="foto">
+                            	<!--<img src="../../../../../assets/img/blog/detalles/foto5-min.jpg" alt="">-->
+                                <img src="{{ data.image.url }}" alt="foto" width="100%"/>
+
+
+                            </div>
+                            
+                            <p [innerHTML]="data.content">{{ data.content }}</p>
+
+
+                            <!--
+                            <blockquote class="primary-quote">
+                                La nube como nueva norma: los sistemas Cloud tomarán cada vez más relevancia porque le facilitan a las organizaciones la escalabilidad, flexibilidad y la agilidad operativa. Ya que cada vez será más habitual que las organizaciones adopten modalidades de trabajo flexibles, es necesario que le brinden a sus colaboradores acceso a la información desde cualquier lugar y momento.<br>
+                                Hiper-personalización: las empresas tendrán el reto 
+                            </blockquote>-->
+
+                            <div class="articles-content-block">
+                                <!--
+                                <p>Esas son solo algunas de las tendencias en temas de digitalización y transformación digital que ya podemos apreciar en este 2021. Si hay algo que nos quedará de lección, es que vivimos en un mundo de constante cambio e innovación que nos obliga a adaptarnos rápidamente a las nuevas tendencias si queremos mantenernos relevantes en el mercado.</p>-->
+                            
+
+
+<!--                                 <h3 class="list-title">The essentials in order:</h3>
+                                <ul>
+                                    <li><span class="italic">Newbie friendly:</span> Make a Star Wars Game with Hour of Code (free website)</li>
+                                    <li><span class="italic">Newbie friendly:</span> “JavaScript for Cats”, Max Ogden (free website)</li>
+                                    <li><span class="italic">Newbie friendly:</span> FreeCodeCamp’s 10-hour Basic JavaScript track You can come back to FCC for
+                                        more practice while you explore the rest of these resources. I recommend that you dedicate time to study other resources
+                                        and do some fresh FCC exercises every day. There are hundreds of hours of exercises, in total, covering a lot more than
+                                        just JavaScript.
+                                    </li>
+                                    <li><span class="italic">Newbie friendly:</span> “JavaScript for Cats”, Max Ogden (free website)</li>
+                                    <li>“Eloquent JavaScript: Second Edition”, Marijn Haverbeke (book with free online edition)</li>
+                                </ul> -->
+
+
+
+                            </div>
+
+<!--                             <div class="articles-media">
+                                <div class="ibox">
+                                    <h3>Compartir</h3>
+                                </div>
+                                <div class="ibox">
+                                    <div class="mybarra">
+                                        <div class="wicon">
+                                            <img class="image image-hide" src="../../../../../assets/img/blog/detalles/twitter-dark.svg" alt="">
+                                            <img class="image" src="../../../../../assets/img/blog/detalles/twitter.svg" alt="">
+                                        </div>
+                                        <div class="wicon">
+                                            <img class="image image-hide" src="../../../../../assets/img/blog/detalles/facebook-dark.svg" alt="">
+                                            <img class="image" src="../../../../../assets/img/blog/detalles/facebook.svg" alt="">
+                                            
+                                        </div>
+                                        <div class="wicon">
+                                            <img class="image image-hide" src="../../../../../assets/img/blog/detalles/linkedin-dark.svg" alt="">
+                                            <img class="image" src="../../../../../assets/img/blog/detalles/linkedin.svg" alt="">
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div> -->
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- SHARE THIS BLOCK -->
+                    <div class="col-lg-3 col-xs-12">
+                        <div class="articles-blog-post-share">
+
+<!--                             <div *ngFor="let myData of myDatas; index as i" class="mylink">
+                            <a [routerLink]="['/pagina',data.id,data.slug]">
+                               <span class="author-info">{{ data.title }}</span>  
+                            </a>
+                            </div> -->
+                            <app-titulo></app-titulo>
+
+<!--                             <div>
+                                <ul>
+                                    <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i>Facebook</a></li>
+                                    <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i>Twitter</a></li>
+                                    <li><a href="#" title="Linkedin"><i class="fa fa-google-plus"></i>Linkedin</a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- end ARTICLE BLOG POST -->
+
+    <!-- ARTICLE BOTTOM INFO -->
+    <div class="articles-info">
+
+
+        <!-- <section class="articles-info-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-xs-12">
+
+                        <div class="articles-footer">
+                            <ul class="articles-footer-info">
+                                <li><a title="" href="#" class="light-link"><i class="pe-7s-comment"></i> 7 Respuestas</a></li>
+                                <li><a title="" href="#" class="light-link"><i class="pe-7s-like"></i> 1221</a></li>
+                            </ul>
+                            <button class="btn btn-light-blue"><a title="Write a response" href="#">Escribe un comentario</a></button>
+                        </div>
+
+                        <div class="articles-author">
+                            <img src="../../../../../assets/img/blog/detalles/avatar.png" alt="" data-rjs="2">
+                            <div class="articles-author-right">
+                                <h4>Aida Oropeza</h4>
+                                <div class="social">
+                                    <a href="" title="Twitter"><i class="icon-social_twitter_circle"></i></a>
+                                    <a href="" title="Github"><i class="icon-social_github_circle"></i></a>
+                                    <a href="" title="LinkedIn"><i class="icon-social_linkedin_circle"></i></a>
+                                </div>
+                                <p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Nam, facere aliquid illo autem accusantium nisi, quis molestiae. Excepturi suscipit provident maiores voluptatem..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="articles-info-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="articles-info-section-title">Últimas lecturas</h1>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="banners">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                            <div class="banner-wrapper">
+                                <a href="#" title="Angular 2 versus React: There Will Be Blood">
+                                    <div class="banner-wrapper-content">
+                                        <h1 class="h2">La nube como estrategia de ciberseguridad</h1>
+                                        <span class="category-tag category-tag-yellow">Artículos de interés</span>
+                                        <time datetime="2016-03-01" class="">Marzo 1, 2021</time>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                            <div class="banner-wrapper">
+                                <a href="#" title="Angular 2 versus React: There Will Be Blood">
+                                    <div class="banner-wrapper-content">
+                                        <h1 class="h2">Navent descubre la agilidad que aporta eSource Capital a Google cloud</h1>
+                                        <span class="category-tag category-tag-green">Artículos de interés</span>
+                                        <time datetime="2016-03-01" class="">Febrero 18, 2021</time>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-xs-12">
+                            <div class="banner-wrapper">
+                                <a href="#" title="Angular 2 versus React: There Will Be Blood">
+                                    <div class="banner-wrapper-content">
+                                        <h1 class="h2">Next OnAir Week 3: Infrastructure</h1>
+                                        <span class="category-tag category-tag-blue">Noticias</span>
+                                        <time datetime="2016-03-01" class="">Septiembre 24, 2020</time>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section> -->
+
+        <!-- ARTICLE BOTTOM INFO COMMENTS -->
+        <!-- <section class="articles-info-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-xs-12">
+                        <h1 class="articles-info-section-title">Comentarios <span class="italic">(7)</span></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-xs-12">
+                        <div class="comments">
+                          
+                            <a title="" href="#" class="light-link comment button-comment">
+                                <span class="button-comment-span"><i class="pe-7s-comment"></i> Escribe un comentario</span>
+                            </a>
+
+                            <ol>
+                                <li>
+                                    <div class="comment">
+                                    	<div class="foto">
+                                    		<img src="../../../../../assets/img/blog/detalles/avatar.png" alt="Profile Picture" data-rjs="2">
+                                    	</div>
+                                        <div class="comment-content">
+                                            <h3>Mariana López</h3>
+                                            <time datetime="2009-11-13T20:00Z">Julio 18, 2020 10:36 AM</time>
+                                            <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Velit, iusto nostrum minima molestiae, excepturi quibusdam nam expedita ipsa vero totam nihil! Officiis magni</p>
+                                            <div class="comment-content-footer">
+                                                <button class="btn btn-small"><a href="#" title="Watch it">Reply</a></button>
+                                                <a title="Likes" href="#" class="light-link comment-content-footer-icon"><i class="pe-7s-like"></i> 0</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ol class="comment-response">
+                                        <li>
+                                            <div class="comment">
+                                            	<div class="foto">
+                                            		<img src="../../../../../assets/img/blog/detalles/avatar.png" alt="Profile Picture" data-rjs="2">
+                                            	</div>
+                                                <div class="comment-content">
+                                                    <h3>Aida Oropeza</h3>
+                                                    <time datetime="2009-11-13T20:00Z">Julio 22, 2020 10:36 AM</time>
+                                                    <p><span class="italic">@Aida Oropeza</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad est, quis? Et officia natus repudiandae vel tempora eius omnis minus temporibus sint voluptatum cum, iste amet tempore illo, saepe! :)</p>
+                                                    <div class="comment-content-footer">
+                                                        <button class="btn btn-small"><a href="#" title="Watch it">Reply</a></button>
+                                                        <a title="Likes" href="#" class="light-link comment-content-footer-icon"><i class="pe-7s-like"></i>
+                                                            3</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                  
+                                        <li>
+                                            <a title="" class="light-link comment button-comment-center">
+                                                <span class="button-comment-text">Mostrar más respuestas<i
+                                                        class="pe-7s-angle-down button-comment-text-right-icon"></i></span>
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </li>
+
+                                <li class="comment">
+                                	<div class="foto">
+                                    	<img src="../../../../../assets/img/blog/detalles/avatar.png" alt="Profile Picture" data-rjs="2">
+                                    </div>
+                                    <div class="comment-content">
+                                        <h3>Jacobo Amaro</h3>
+                                        <time datetime="2009-11-13T20:00Z">Agosto 20, 2020 16:32 AM</time>
+                                        <p>Muy buen artículo!</p>
+                                        <div class="comment-content-footer">
+                                            <button class="btn btn-small"><a href="#" title="Watch it">Reply</a></button>
+                                            <a title="Likes" href="#" class="light-link comment-content-footer-icon"><i class="pe-7s-like"></i> 124</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+    </div>
+    <!-- end ARTICLE BOTTOM INFO -->
+
+
+</main>
+<!-- end MAIN -->

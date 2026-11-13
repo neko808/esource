@@ -1,0 +1,455 @@
+<div class="space"></div>
+
+<div class="lightgray">
+	<section id="slider">
+		<div class="slide">
+			<div class="somos">
+				<div class="wrapper">
+					<div class="info anime-element fadeleft-animation">
+						<div class="gtitle">
+							<h2>Customer for life</h2>
+						</div>
+						<div class="fluid">
+							<div class="piece">
+								<h4>{{ 'cloud.title152' | translate }} <span>{{ 'cloud.title153' | translate }}</span></h4>
+								<ul>
+									<li>{{ 'cloud.title154' | translate }}</li>
+									<li>{{ 'cloud.title155' | translate }}</li>
+									<li>{{ 'cloud.title156' | translate }}</li>
+									<li>{{ 'cloud.title157' | translate }}</li>
+								</ul>
+                                 <div class="sim-button button14" (click)='scroll(ibox)'>
+                                    <span>{{ 'cloud.title158' | translate }}</span>
+                                    <img class="arrow22" src="../../../../assets/img/arrow.svg" alt="">
+                                </div>
+							</div>
+						</div>
+					</div>
+					<div class="foto">
+						<img src="../../../../assets/img/customer/customer.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+<div class="content-area">  
+	<div class="wrap">
+		<section id="copy">
+            <div class="center">
+                <img class="bcustomer" src="../../../../assets/img/customer/customerLife.svg" alt="">
+            </div>
+            <p class="select">
+            {{ 'cloud.title159' | translate }}</p>
+		</section>
+    </div>
+</div>
+
+
+
+<img class="wave" src="../../../../../assets/img/bg-wave.svg" alt="">
+<div class="content-area">  
+    
+    <div class="wrap">
+		
+		<section id="beneficios">
+            <div class="titulo">
+                <h2>{{ 'cloud.title160' | translate }}</h2>
+            </div>
+			<div class="flex6">
+				<div class="element6">
+					<div class="fluid">
+						<div class="barra piece">
+							<img class="number" src="../../../../assets/img/customer/pencil.svg" alt="">
+						</div>
+						<div class="piece">
+                            <div class="base">
+							     <p><span>{{ 'cloud.title161' | translate }}</span><br>{{ 'cloud.title162' | translate }}</p>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="element6">
+					<div class="fluid">
+						<div class="piece">
+							<img class="number" src="../../../../assets/img/customer/teaching.svg" alt="">
+						</div>
+						<div class="piece">
+                            <div class="base">
+                                <p><span>{{ 'cloud.title163' | translate }}</span><br>{{ 'cloud.title164' | translate }}</p>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="element6">
+					<div class="fluid">
+						<div class="piece">
+							<img class="number" src="../../../../assets/img/customer/solution.svg" alt="">
+						</div>
+						<div class="piece">
+                            <div class="base">
+							     <p><span>{{ 'cloud.title165' | translate }}</span><br>{{ 'cloud.title166' | translate }}</p>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="element6">
+					<div class="fluid">
+						<div class="piece">
+							<img class="number" src="../../../../assets/img/customer/communication.svg" alt="">
+						</div>
+						<div class="piece">
+                            <div class="base">
+							     <p><span>{{ 'cloud.title167' | translate }}</span><br>{{ 'cloud.title168' | translate }}</p>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="element6">
+					<div class="fluid">
+						<div class="piece">
+							<img class="number" src="../../../../assets/img/customer/pencil.svg" alt="">
+						</div>
+						<div class="piece">
+                            <div class="base">
+							     <p><span>{{ 'cloud.title169' | translate }}</span><br>{{ 'cloud.title170' | translate }}</p>
+                            </div>
+						</div>
+					</div>
+				</div>
+                <div class="element6">
+                    <div class="fluid">
+                        <div class="piece">
+                            <img class="number" src="../../../../assets/img/customer/atencion.svg" alt="">
+                        </div>
+                        <div class="piece">
+                            <div class="base">
+                                 <p><span>{{ 'cloud.title171' | translate }}</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			
+		</section>
+
+
+	</div>
+</div>
+
+
+<div class="fondo21">
+
+    <div class="colors colors-change">
+        <div [ngClass]="{'active' : solution === 'apoyo'}" class="color apoyo">
+            <div class="raw color1"></div>
+        </div>
+        <div [ngClass]="{'active' : solution === 'tooglebox'}" class="color tooglebox">
+            <div class="raw color2"></div>
+        </div>
+        <div [ngClass]="{'active' : solution === 'transfer'}" class="color transfer">
+            <div class="raw color3"></div>
+        </div>
+        <div [ngClass]="{'active' : solution === 'projects'}" class="color projects">
+            <div class="raw color4"></div>
+        </div>
+    </div>
+
+
+
+<div class="content-area">
+	<div class="wrap">
+
+    <article class="services">
+        <nav class="{{solution}}">
+
+            <button [ngClass]="{'active': solution === 'transfer'}" (click)="changeSolution('transfer', '')">
+                <p>{{ 'cloud.title172' | translate }}</p>
+            </button>
+
+        	<button [ngClass]="{'active': solution === 'apoyo'}" (click)="changeSolution('apoyo', '')">
+        		<p>{{ 'cloud.title173' | translate }}</p>
+        	</button>
+
+            <button [ngClass]="{'active': solution === 'projects'}" (click)="changeSolution('projects', '')">
+                <p>{{ 'cloud.title174' | translate }}</p>
+            </button>
+
+        	<button [ngClass]="{'active': solution === 'tooglebox'}" (click)="changeSolution('tooglebox', '')">
+        		<p>{{ 'cloud.title175' | translate }}</p>
+        	</button>
+        	
+        </nav>
+
+
+        
+
+
+
+        <div class="wrapper soluciones-wrap">
+
+
+            <div [ngClass]="{'active' : solution === 'transfer'}" class="solucion transfer">
+                <div class="card-wrapper">
+
+                    <div class="piece21">
+                        <h3>{{ 'cloud.title176' | translate }}</h3>
+                        <ul>
+                            <li>{{ 'cloud.title177' | translate }}</li>
+                            <li>{{ 'cloud.title178' | translate }}</li>
+                            <li>{{ 'cloud.title179' | translate }}</li>
+                            <li>{{ 'cloud.title180' | translate }}</li>
+                            <li>{{ 'cloud.title181' | translate }}</li>
+                            <li>{{ 'cloud.title182' | translate }}</li>
+                        </ul>
+                        <h3>{{ 'cloud.title183' | translate }}</h3>
+                        <ul>
+                            <li>{{ 'cloud.title184' | translate }}</li>
+                            <li>{{ 'cloud.title185' | translate }}</li>
+                            <li>{{ 'cloud.title186' | translate }}</li>
+                            <li>{{ 'cloud.title187' | translate }}</li>
+                            <li>{{ 'cloud.title188' | translate }}</li>
+                        </ul>
+                    </div>
+                    <div class="piece21">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div [ngClass]="{'active' : solution === 'apoyo'}" class="solucion apoyo">
+                <div class="card-wrapper">
+
+                	<div class="piece21">
+                        <img class="elearn" src="../../../../assets/img/customer/AFLogoesclearning-01.png" alt="">
+                		<h3 class="etitle">eSource learning</h3>
+                        <p>{{ 'cloud.title189' | translate }}</p>
+                		<ul>
+                			<li>{{ 'cloud.title190' | translate }}</li>
+                			<li>{{ 'cloud.title191' | translate }}</li>
+                			<li>{{ 'cloud.title192' | translate }}</li>
+                			<li>{{ 'cloud.title193' | translate }}</li>
+                		</ul>
+                	</div>
+                	<div class="piece21">
+                	</div>
+                	
+                </div>
+            </div>
+
+            <div [ngClass]="{'active' : solution === 'projects'}" class="solucion projects">
+                <div class="card-wrapper">
+
+
+                    <div class="piece21">
+                        <h3 class="title">{{ 'cloud.title194' | translate }}</h3>
+                        <div class="flex22">
+                             <div class="box22">
+                                <h3>{{ 'cloud.title195' | translate }}</h3>
+                                <ul>
+                                    <li>{{ 'cloud.title196' | translate }}</li>
+                                    <li>{{ 'cloud.title197' | translate }}</li>
+                                    <li>{{ 'cloud.title198' | translate }}</li>
+                                </ul>
+                            </div>
+                            <div class="box22">
+                                <h3>{{ 'cloud.title199' | translate }}</h3>
+                                <ul>
+                                    <li>{{ 'cloud.title200' | translate }}</li>
+                                    <li>{{ 'cloud.title201' | translate }}</li>
+                                    <li>{{ 'cloud.title202' | translate }}</li>
+                                    <li>{{ 'cloud.title203' | translate }}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="piece21">
+                    </div>
+
+                </div>
+            </div>
+
+            <div [ngClass]="{'active' : solution === 'tooglebox'}" class="solucion tooglebox">
+                <div class="card-wrapper">
+
+                   <div class="piece21">
+                        <img class="tooglebox" src="../../../../assets/img/customer/tooglebox.svg" alt="">
+                        <h4>{{ 'cloud.title204' | translate }}<br><br>
+                        {{ 'cloud.title205' | translate }}
+                        </h4>
+                        <ul>
+                            <li>{{ 'cloud.title206' | translate }}</li>
+                            <li>{{ 'cloud.title207' | translate }}</li>
+                            <li>{{ 'cloud.title208' | translate }}</li>
+                            <li>{{ 'cloud.title209' | translate }}</li>
+                            <li>{{ 'cloud.title210' | translate }}</li>
+                        </ul>
+                    </div>
+                    <div class="piece21">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+	</div>
+</div>
+</div>
+
+<div class="space"></div>
+
+<div class="content-area">
+    <div class="wrap">
+
+        <section class="vc_section">
+
+            <div class="flex6 website">
+                <div class="elementb box">
+                    <div class="high" style="align-items: center;">
+                        <img class="icloud-b" src="../../../../assets/img/customer/platform-icon-b.svg" alt="cloud">
+                        <img class="icloud" src="../../../../assets/img/customer/platform-icon.svg" alt="cloud">
+                        <div class="table">
+
+                        </div>
+                    </div>
+                    <div class="low">
+                        <h3>{{ 'cloud.title211' | translate }}</h3>
+                    </div>
+                </div>
+                <div class="elementb box">
+                    <div class="high">
+                        <img class="icloud-b" src="../../../../assets/img/user-b.svg" alt="cloud">
+                        <img class="icloud" src="../../../../assets/img/user.svg" alt="">
+                        <div class="table">
+                            <div><p>+</p></div>
+                            <div class="cell figure">
+                                <span>1700</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="low">
+                        <h3><span>+1,700</span> {{ 'cloud.title212' | translate }}</h3>
+                    </div>
+                </div>
+                <div class="elementb box">
+                    <div class="high">
+                        <img class="users-b" src="../../../../assets/img/customer/users-icon-b.svg" alt="">
+                        <img class="users" src="../../../../assets/img/customer/users-icon.svg" alt="">
+                        <div class="table">
+                            <div class="cell figure">
+                                <span>185</span>
+                            </div>
+                            <div><p>K</p></div>
+                        </div>
+                    </div>
+                    <div class="low">
+                        <h3>{{ 'cloud.title213' | translate }} <span>185,000</span> {{ 'cloud.title214' | translate }}</h3>
+                    </div>
+                </div>
+                <div class="elementb box">
+                    <div class="high" style="align-items: center;">
+                        <img class="admin-b" src="../../../../assets/img/customer/admin-icon-b.svg" alt="">
+                        <img class="admin" src="../../../../assets/img/customer/admin-icon.svg" alt="">
+                        <div class="table">
+                        </div>
+                    </div>
+                    <div class="low">
+                        <h3>{{ 'cloud.title215' | translate }} <span>{{ 'cloud.title216' | translate }}</span></h3>
+                    </div>
+                </div>
+                <div class="elementb box">
+                    <div class="high">
+                        <img class="icloud-b" src="../../../../assets/img/customer/formacion-icon-b.svg" alt="cloud">
+                        <img class="icloud" src="../../../../assets/img/customer/formacion-icon.svg" alt="">
+                        <div class="table">
+                            <!-- <div><p>+</p></div> -->
+                            <div class="cell figure">
+                                <span>850</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="low">
+                        <h3>{{ 'cloud.title217' | translate }} <span>{{ 'cloud.title218' | translate }}</span> {{ 'cloud.title219' | translate }}</h3>
+                    </div>
+                </div>
+                <div class="elementb box">
+                    <div class="high" style="align-items: center;">
+                        <img class="icloud-b" src="../../../../assets/img/customer/comunication-icon-b.svg" alt="cloud">
+                        <img class="icloud" src="../../../../assets/img/customer/comunication-icon.svg" alt="">
+                        <div class="table">
+                        </div>
+                    </div>
+                    <div class="low">
+                        <h3>{{ 'cloud.title220' | translate }} <span>{{ 'cloud.title221' | translate }}</span></h3>
+                    </div>
+                </div>
+                <div class="elementb box">
+                    <div class="high" style="align-items: center;">
+                        <img class="icloud-b" src="../../../../assets/img/customer/support-b.svg" alt="cloud">
+                        <img class="icloud" src="../../../../assets/img/customer/support.svg" alt="">
+                        <div class="table">
+                        </div>
+                    </div>
+                    <div class="low">
+                        <h3>{{ 'cloud.title222' | translate }} <span>Helpdesk.</span></h3>
+                    </div>
+                </div>
+                <div class="elementb box">
+                    <div class="high" style="align-items: center;">
+                        <img class="atencion-b" src="../../../../assets/img/customer/attention-icon-b.svg" alt="cloud">
+                        <img class="atencion" src="../../../../assets/img/customer/attention-icon.svg" alt="">
+                        <div class="table">
+                        </div>
+                    </div>
+                    <div class="low">
+                        <h3>{{ 'cloud.title223' | translate }} <span>{{ 'cloud.title224' | translate }}</span></h3>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="intereses">
+            <div class="wrapper">
+                <h3>{{ 'cloud.title225' | translate }}</h3>
+                <div class="card-wrapper">
+                    <div class="card" routerLink="/workspace">
+                        <img class="img-iconb" src="../../../../../assets/img/Google_Workspace_Logo.svg" alt="Cloud">
+                        <img class="arrow" src="../../../../assets/img/blue-arrow.svg" alt="arrow">
+                    </div>
+<!--                     <div class="card">
+                       
+                            <div class="ibox">
+                                <img class="gcplat" src="../../../../assets/img/gcplat.svg" alt="">
+                            </div>
+                            <div class="ibox">
+                                <p>GCP Onboarding</p>
+                            </div>
+                       
+                        <img class="arrow" src="../../../../assets/img/blue-arrow.svg" alt="arrow">
+                    </div> -->
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+
+<div style="margin-bottom: -40px;">
+    <div #ibox>
+        <app-form></app-form>
+    </div>
+</div>
+
+
+
+
+
+
+

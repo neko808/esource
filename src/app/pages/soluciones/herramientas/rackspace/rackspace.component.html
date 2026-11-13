@@ -1,0 +1,159 @@
+<section id="rackspace">
+    <article class="banner">
+        <div class="wrapper">
+            <div class="info">
+                <div class="box">
+                   <img src="../../../../../assets/img/rackspace/Rackspace_Technology_Logo_RGB_BLK.png" alt="rackspace">
+                    <h4>Email</h4> 
+                </div>
+                <h2>{{ 'cloud.title654' | translate }} <b>{{ 'cloud.title655' | translate }}</b></h2>
+                <p>{{ 'cloud.title656' | translate }}</p>
+            </div>
+            <div class="graph">
+                <div class="plane-path">
+                    <img class="path" src="../../../../../assets/img/rackspace/banner/path.svg" alt="path">
+                    <img class="plane" src="../../../../../assets/img/rackspace/banner/plane.svg" alt="plane">
+                </div>
+                <div class="engranes">
+                    <img src="../../../../../assets/img/rackspace/banner/engrane.svg" alt="engrane">
+                    <img src="../../../../../assets/img/rackspace/banner/engrane.svg" alt="engrane">
+                </div>
+                <div class="mail">
+                    <img src="../../../../../assets/img/rackspace/banner/envolve-back.svg" alt="mail">
+                    <img class="message" src="../../../../../assets/img/rackspace/banner/cart.svg" alt="carta">
+                    <img class="front" src="../../../../../assets/img/rackspace/banner/envolve-front.svg" alt="mail">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="admin">
+        <div class="wrapper">
+            <img class="float" src="../../../../../assets/img/rackspace/engrane.svg" alt="engrane">
+            <div class="graph">
+                <div class="img">
+                    <img src="../../../../../assets/img/rackspace/admin.jpg" alt="admin">
+                </div>
+            </div>
+            <div class="info">
+                <h2>{{ 'cloud.title657' | translate }}</h2>
+                <div class="card">
+                    <p>{{ 'cloud.title658' | translate }}</p>
+                </div>
+                <div class="card">
+                    <p>{{ 'cloud.title659' | translate }}</p>
+                </div>
+                <div class="card">
+                    <p>{{ 'cloud.title660' | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="movil">
+        <div class="wrapper">            
+            <img class="float" src="../../../../../assets/img/rackspace/movil.svg" alt="engrane">
+            <div class="info">
+                <h2>{{ 'cloud.title661' | translate }}</h2>
+                <div class="card">
+                    <p>{{ 'cloud.title662' | translate }}</p>
+                </div>
+                <div class="card">
+                    <p>{{ 'cloud.title663' | translate }}</p>
+                </div>
+            </div>
+            <div class="graph">
+                <div class="img">
+                    <img src="../../../../../assets/img/rackspace/movil.jpg" alt="movil">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="tranquilidad">
+        <div class="wrapper">            
+            <div class="info">
+                <h2>{{ 'cloud.title664' | translate }}</h2>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img class="ico" src="../../../../../assets/img/rackspace/shield.svg" alt="shield">
+                        <p>{{ 'cloud.title665' | translate }}</p>
+                    </div>
+                    <div class="card">
+                        <img class="ico" src="../../../../../assets/img/rackspace/lock.svg" alt="shield">
+                        <p>{{ 'cloud.title666' | translate }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="graph">
+                <div class="img"></div>
+            </div>
+        </div>
+    </article>
+
+    <article class="servicio">
+        <div class="wrapper">            
+            <div class="info">
+                <div class="card">
+                    <p> {{ 'cloud.title667' | translate }}</p>
+                    <img src="../../../../assets/img/user.svg" alt="user">
+                </div>
+                <h2>{{ 'cloud.title668' | translate }}</h2>
+                <div class="card">
+                    <img src="../../../../assets/img/rackspace/message.svg" alt="message">
+                    <p>{{ 'cloud.title669' | translate }}</p>
+                </div>
+            </div>
+            <div class="graph">
+                <div class="img"></div>
+            </div>
+        </div>
+    </article>
+
+</section>
+
+<div (click)="scroll(formbox)">
+   <app-banner></app-banner> 
+</div>
+
+
+<section id="rackspace">
+
+    <article class="video">
+        <div class="wrapper">
+            <div class="video-wrap">
+                <div class="frame">
+                    <iframe src="https://www.youtube.com/embed/1KmR7eo5xm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                </div>
+                <img class="rackb" src="../../../../../assets/img/rackspace/Rackspace_Technology_Logo_RGB_WHT.png" alt="rackspace logo">
+            </div>
+            <p routerLink="/workspace">{{ 'cloud.title670' | translate }}</p>
+        </div>
+    </article>
+
+    <section class="intereses">
+        <div class="wrapper">
+            <h3>{{ 'cloud.title671' | translate }}</h3>
+            <div class="card-wrapper">
+                <div class="icard" routerLink="/workspace">
+                    <img class="ncloud" src="../../../../../assets/img/Google_Workspace_Logo.svg" alt="microsoft azure">
+                    <img class="arrow" src="../../../../assets/img/blue-arrow.svg" alt="arrow">
+                </div>
+                <div class="icard" routerLink="/acceleracion-digital">
+                    <img class="img-iconb" src="../../../../../assets/img/acceleracion-digital/logo.png" alt="aceleracion digital">
+                    <img class="arrow" src="../../../../assets/img/blue-arrow.svg" alt="arrow">
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+<!--     <app-interes [intereses]="interesesCards"></app-interes> -->
+    
+    <div #formbox>
+      <app-form></app-form> 
+    </div>
+    
+
+</section>

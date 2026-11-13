@@ -1,0 +1,314 @@
+<div class="space"></div>
+
+<div class="lightgray">
+	<section id="slider">
+		<div class="slide">
+			<div class="somos">
+				<div class="wrapper">
+					<div class="right">
+						<img class="phone" src="../../../../../assets/img/google-maps/phone.png" alt="">
+						<div class="round"></div>
+						<img class="sticker" src="../../../../../assets/img/google-maps/sticker.svg" alt="">
+					</div>
+					
+					<div class="info anime-element fadeleft-animation">
+						<div class="gtitle">
+							<img class="igoogle" src="../../../../../assets/img/google-maps/googleMaps.svg" alt=""> 
+						</div>
+						<div class="fluid">
+							<div class="piece">
+								<h4>{{ 'cloud.title762' | translate }}</h4>
+								<p>{{ 'cloud.title763' | translate }}</p>
+							</div>
+						</div>
+						<div class="ibutton">
+		                    <div class="sim-button button14" (click)='scroll(formbox)'>
+		                        <span>{{ 'cloud.title764' | translate }}</span>
+		                        <img class="arrow22" src="../../../../assets/img/arrow.svg" alt="">
+		                    </div>
+		                </div>
+					</div>
+					<div class="circle"></div>
+					<img class="dots" src="../../../../../assets/img/bg-dot-grid.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+	
+<div id="primary" class="content-area">
+	<div class="wrap">
+
+		<section id="highlights">
+
+			<div class="flex6 website">
+				<div class="elementb box">
+					<div class="high">
+						<img class="icloud" src="../../../../../assets/img/google-maps/cobertura.svg" alt="">
+						<div class="table">
+							<div class="cell figure">
+							    <span>99</span>
+							</div>
+							<div class="min"><span>%</span></div>
+						</div>
+						
+					</div>
+					<div class="low">
+						<h3>{{ 'cloud.title765' | translate }}</h3>
+						<h4>{{ 'cloud.title766' | translate }}</h4>
+					</div>
+				</div>
+				<div class="elementb box">
+					<div class="high center">
+						<img class="icloud2" src="../../../../../assets/img/google-maps/update-icon.svg" alt="">
+						<div class="table">
+							
+							<div class="cell figure">
+							    <span>25</span>
+							</div>
+							<div class="min"><span>M</span></div>
+						</div>
+						
+					</div>
+					<div class="low">
+						<h3>{{ 'cloud.title767' | translate }}</h3>
+						<h4>{{ 'cloud.title768' | translate }}</h4>
+					</div>
+				</div>
+				<div class="elementb box">
+					<div class="high">
+						<img class="imoon" src="../../../../../assets/img/google-maps/active-user.svg" alt="">
+						<div class="table">
+							<div class="cell figure">
+							    <span>1000</span>
+							</div>
+							<div class="min"><span>M</span></div>
+						</div>
+					</div>
+					<div class="low">
+						<h3>{{ 'cloud.title769' | translate }}</h3>
+						<h4>{{ 'cloud.title770' | translate }}</h4>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+</div>	
+
+
+<div class="darkblue">
+	<section id="servicios">
+	    <div class="wrapper">
+	        <div class="two-col">
+	            <div class="graph">
+	                <div [ngClass]="{'active' : service === 'maps'}" class="service">
+	                    <img class="main1" src="../../../../../assets/img/google-maps/phone2.png" alt="documents">
+	                </div> 
+	                <div [ngClass]="{'active' : service === 'routes'}" class="service" >
+	                    <img class="main" src="../../../../../assets/img/google-maps/enroute.svg" alt="documents">
+	                </div> 
+	                <div [ngClass]="{'active' : service === 'places'}" class="service" >
+	                    <img class="main2" src="../../../../../assets/img/google-maps/enplaces.svg" alt="documents">
+	                </div> 
+	            </div>
+	            <div class="info">
+	                <h3>{{ 'cloud.title771' | translate }}</h3>
+
+
+	                <div [ngClass]="{'active' : service === 'maps'}" class="service e-commerce" (click)="changeService('maps', '')">
+	                	<img class="mapas" src="../../../../../assets/img/google-maps/mapas.svg" alt="">
+	                    <h4>Maps</h4> 
+	                    <p>{{ 'cloud.title772' | translate }}</p>
+	                </div>
+	                <div [ngClass]="{'active' : service === 'routes'}" class="service e-commerce" (click)="changeService('routes', '')">
+	                	<img class="routes" src="../../../../../assets/img/google-maps/routes.svg" alt="">
+	                    <h4>Routes</h4>
+	                    <p>{{ 'cloud.title773' | translate }}</p>
+	                </div>
+	                <div [ngClass]="{'active' : service === 'places'}" class="service e-commerce" (click)="changeService('places', '')">
+	                	<img class="places" src="../../../../../assets/img/google-maps/places.svg" alt="">
+	                    <h4>Places</h4>
+	                    <p>{{ 'cloud.title774' | translate }}</p>
+	                </div>
+
+
+	            </div>
+	        </div>
+	    </div>
+	</section>
+</div>
+
+
+<div id="primary" class="content-area">
+	<div class="wrap">
+		<section id="apis">
+			<img class="happy" src="../../../../../assets/img/google-maps/happy.svg" alt="">
+			<div class="flex9">
+				<div class="box9">
+					<h2>{{ 'cloud.title775' | translate }}</h2>
+
+					<div class="sim-button button14" (click)="scroll(formbox)">
+			            <span>{{ 'cloud.title776' | translate }}</span>
+			            <img class="arrow22" src="../../../../assets/img/arrow.svg" alt="">
+			        </div>
+				</div>
+				<div class="box9">
+					<ul>
+						<li>Google Maps API.</li>
+						<li>Google Maps Android API.</li>
+						<li>{{ 'cloud.title777' | translate }}</li>
+						<li>{{ 'cloud.title778' | translate }}</li>
+						<li>{{ 'cloud.title779' | translate }}</li>
+					</ul>
+				</div>
+				<div class="box9">
+					<ul>
+						<li>{{ 'cloud.title780' | translate }}</li>
+						<li>Google Static Maps API.</li>
+						<li>Google Street View API.</li>
+						<li>Geocoding API.</li>
+						<li>Geolocalization API.</li>
+					</ul>
+				</div>
+				<div class="box9">
+					<ul>
+						<li>Directions API.</li>
+						<li>Distance Matrix API.</li>
+						<li>Roads API.</li>
+						<li>Elevation API.</li>
+						<li>Time Zone API.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="industrias">
+			<div class="w100">
+				<h2>{{ 'cloud.title781' | translate }}</h2>
+			</div>
+			<div class="flex22">
+					<div class="box22">
+					
+							<div class="fbox drw">
+								<div class="sbox">
+									<div class="mobile"></div>
+								</div>
+								<div class="sbox">
+									<h2>{{ 'cloud.title782' | translate }}</h2>
+									<p>{{ 'cloud.title783' | translate }}</p>
+								</div>
+							</div>
+
+							<div class="fbox">
+								<div class="sbox">
+									<div class="mobile2"></div>
+								</div>
+								<div class="sbox">
+									<h2>{{ 'cloud.title784' | translate }}</h2>
+									<p>{{ 'cloud.title785' | translate }}</p>
+								</div>
+							</div>
+
+					
+					</div>
+					<div class="box22">
+						<div class="fbox upper">
+							<div class="zbox">
+								<div class="track2"></div>
+							</div>
+							<div class="zbox">
+								<h2>{{ 'cloud.title786' | translate }}</h2>
+								<p>{{ 'cloud.title787' | translate }}</p>
+							</div>
+						</div>
+					</div>
+				
+			</div>
+		</section>
+
+
+		<section id="credenciales">
+
+			<div class="flex3 website">
+				<div class="element3 box">
+					<div class="high center">
+						<img class="imoon4" src="../../../../../assets/img/google-maps/sticker.svg" alt="">
+						<div class="table">
+							<div class="fcell">
+							    <span>{{ 'cloud.title788' | translate }}</span>
+							</div>
+						</div>
+					</div>
+					<div class="low">
+						<h3>{{ 'cloud.title789' | translate }}</h3>
+					</div>
+				</div>
+				<div class="element3 box">
+					<div class="high">
+						<img class="imoon3" src="../../../../../assets/img/tool-icon.svg" alt="">
+						<div class="table">
+							<div class="fcell">
+							    <span>{{ 'cloud.title790' | translate }}</span>
+							</div>
+						</div>
+					</div>
+					<div class="low">
+						<h3>{{ 'cloud.title791' | translate }}</h3>
+					</div>
+				</div>
+				<div class="element3 box">
+					<div class="high">
+						<img class="imoon2" src="../../../../../assets/img/billing-icon.svg" alt="">
+						<div class="table">
+							<div class="fcell">
+							    <span>{{ 'cloud.title792' | translate }}</span>
+							</div>
+						</div>
+					</div>
+					<div class="low">
+						<h3>{{ 'cloud.title793' | translate }}</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="intereses">
+			<div class="wrapper">
+	            <h3>{{ 'cloud.title794' | translate }}</h3>
+	            <div class="card-wrapper">
+	            	<div class="card" routerLink="/gcp">
+	                    <img class="ncloud" src="../../../../../assets/img/gplatform.svg" alt="google cloud platform">
+	                    <img class="arrow" src="../../../../assets/img/blue-arrow.svg" alt="arrow">
+	                </div>
+	                <div class="card" routerLink="/workspace">
+	                    <img class="img-iconb" src="../../../../../assets/img/Google_Workspace_Logo.svg" alt="google workspace">
+	                    <img class="arrow" src="../../../../assets/img/blue-arrow.svg" alt="arrow">
+	                </div>
+	                
+	                
+	            </div>
+	        </div>
+		</section>
+
+	</div>
+</div>
+
+
+<div #formbox style="margin-bottom: -40px;">
+	<app-form></app-form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

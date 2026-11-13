@@ -1,0 +1,10 @@
+<div class="wrapper">
+	<div class="barra">
+		<h3>Entradas Recientes</h3>
+		<div class="boxes" *ngFor="let data of datas | slice:0:10; index as i">
+			<a [routerLink]="['/pagina',data.id,data.slug]" (click)="reloadPage()">
+               <span class="author-info">{{data.title}}</span>  
+            </a>
+		</div>
+	</div>
+</div>

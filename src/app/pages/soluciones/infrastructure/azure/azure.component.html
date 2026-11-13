@@ -1,0 +1,186 @@
+<section id="azure">
+    <article class="banner">
+        <div class="wrapper">
+            <div class="info">
+                <div class="logo">
+                    <img src="../../../../../assets/img/azure/AzureLogo.png" alt="">
+                </div>
+                
+                <!-- <h2>Microsoft Azure</h2> -->
+                <div class="card-wrapper">
+                    <div class="card">
+                        <h3>{{ 'cloud.title724' | translate }}</h3>
+                        <p>{{ 'cloud.title725' | translate }}</p>
+                    </div>
+                    <div class="card">
+                        <h3>{{ 'cloud.title726' | translate }} </h3>
+                        <p>{{ 'cloud.title727' | translate }}</p>
+                    </div>
+                </div> 
+                <div class="ibutton">
+                    <div class="sim-button button14" (click)='scroll(ibox)'>
+                        <span>{{ 'cloud.title728' | translate }}</span>
+                        <img class="arrow22" src="../../../../assets/img/arrow.svg" alt="">
+                    </div>
+                </div>               
+            </div>
+            <div class="img">
+                <img src="../../../../../assets/img/azure/migrate.png" alt="migrate">
+            </div>
+        </div>
+    </article>
+
+    <article class="beneficios">
+        <div class="wrapper">
+            <h2>{{ 'cloud.title729' | translate }}</h2>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="../../../../assets/img/user.svg" alt="productividad-icon">
+                    <h3>{{ 'cloud.title730' | translate }}</h3>
+                    <p>{{ 'cloud.title731' | translate }}</p>
+                </div>
+                <div class="card">
+                    <img src="../../../../../assets/img/versatil-icon.svg" alt="versatil-icon">
+                    <h3>{{ 'cloud.title732' | translate }}</h3>
+                    <p>{{ 'cloud.title733' | translate }}</p>
+                </div>
+                <div class="card">
+                    <img src="../../../../../assets/img/brain-icon.svg" alt="inteligencia-icon">
+                    <h3>{{ 'cloud.title734' | translate }}</h3>
+                    <p>{{ 'cloud.title735' | translate }}</p>
+                </div>
+                <div class="card">
+                    <img src="../../../../assets/img/thumbs.svg" alt="confiabilidad-icon">
+                    <h3>{{ 'cloud.title736' | translate }}</h3>
+                    <p>{{ 'cloud.title737' | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="cifras">
+        <div class="wrapper">
+            <h2>{{ 'cloud.title738' | translate }}</h2>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="table">
+                        <div class="cell figure">
+                            <h3>+<span>70</span></h3>
+                        </div>
+                    </div>
+                    <p>{{ 'cloud.title739' | translate }}</p>
+                </div>
+                <div class="card">
+                    <div class="table">
+                        <div class="cell figure">
+                            <h3><span>95</span>%</h3>
+                        </div>
+                    </div>
+                    <p>{{ 'cloud.title740' | translate }}</p>
+                </div>
+                <div class="card">
+                    <div class="table">
+                        <div class="cell figure">
+                            <h3><span>120,000</span></h3>
+                        </div>
+                    </div>
+                    <p>{{ 'cloud.title741' | translate }}</p>
+                </div>
+            </div>
+
+            <button (click)="goToSection('form-g')" type="button" class="cta">{{ 'cloud.title742' | translate }}</button>
+        </div>
+    </article>
+
+    <article class="seguridad">
+        <div class="wrapper">
+            <h2>{{ 'cloud.title743' | translate }}</h2>
+            <div class="img">
+                <img [ngClass]="{'active': seguridad === 'layers'}" src="../../../../../assets/img/azure/layers.svg" alt="layers">
+                <img [ngClass]="{'active': seguridad === 'hardware'}" src="../../../../../assets/img/azure/hardware.png" alt="layers">
+                <img [ngClass]="{'active': seguridad === 'attacks'}" src="../../../../../assets/img/azure/attacks.svg" alt="layers">
+                <img [ngClass]="{'active': seguridad === 'global'}" src="../../../../../assets/img/azure/global.svg" alt="layers">
+            </div>
+            <div class="info">
+                <div [ngClass]="{'active': seguridad === 'layers'}" class="card">
+                    <h3>{{ 'cloud.title744' | translate }}</h3>
+                    <p>{{ 'cloud.title745' | translate }}</p>
+                </div>
+                <div [ngClass]="{'active': seguridad === 'hardware'}" class="card">
+                    <h3>{{ 'cloud.title746' | translate }}</h3>
+                    <p>{{ 'cloud.title747' | translate }}</p>
+                </div>
+                <div [ngClass]="{'active': seguridad === 'attacks'}" class="card">
+                    <h3>{{ 'cloud.title748' | translate }}</h3>
+                    <p>{{ 'cloud.title749' | translate }}</p>
+                </div>
+                <div [ngClass]="{'active': seguridad === 'global'}" class="card">
+                    <h3>{{ 'cloud.title750' | translate }}</h3>
+                    <p>{{ 'cloud.title751' | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="video">
+        <div class="wrapper">
+            <div class="video-wrap">
+                <div class="frame">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KXkBZCe699A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="credenciales">
+        <img class="bg" src="../../../../../assets/img/microsoft365/clouds.png" alt="clouds">
+        <div class="wrapper">
+            <h2>{{ 'cloud.title752' | translate }}</h2>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="../../../../../assets/img/microsoft365/icons/cloud-blue.svg" alt="cloud">
+                    <h3 class="title">{{ 'cloud.title753' | translate }}</h3>
+                    <p>{{ 'cloud.title754' | translate }}</p>
+                </div>
+                <div class="card">
+                    <img src="../../../../../assets/img/microsoft365/icons/support.svg" alt="user">                    
+                    <h3 class="title">{{ 'cloud.title755' | translate }}</h3>
+                    <p>{{ 'cloud.title756' | translate }}</p>
+                </div>
+                <div class="card">
+                    <img src="../../../../../assets/img/microsoft365/icons/users.svg" alt="user">
+                    <h3 class="title">{{ 'cloud.title757' | translate }}</h3>
+                    <p>{{ 'cloud.title758' | translate }}</p>
+                </div>
+                <div class="card">
+                    <img src="../../../../../assets/img/microsoft365/icons/certificacion.svg" alt="certificacion">
+                    <h3 class="title">{{ 'cloud.title759' | translate }}</h3>
+                    <p>{{ 'cloud.title760' | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--     <app-interes [intereses]="interesesCards"></app-interes> -->
+
+    <article class="intereses">
+        <div class="wrapper">
+            <h3>{{ 'cloud.title761' | translate }}</h3>
+            <div class="card-wrapper">
+                <div class="card" routerLink="/microsoft365">
+                    <img class="img-iconb" src="../../../../../assets/img/microsoft365.png" alt="google workspace">
+                    <img class="arrow" src="../../../../assets/img/blue-arrow.svg" alt="arrow">
+                </div>
+                <div class="card" routerLink="/acceleracion-digital">
+                    <img class="img-icon" src="../../../../assets/img/acceleracion-digital/logo.png" alt="google maps">
+                    <img class="arrow" src="../../../../assets/img/blue-arrow.svg" alt="arrow">
+                </div>
+                
+            </div>
+        </div>
+    </article>
+
+    <div #ibox>
+       <app-form id="form-g"></app-form> 
+    </div>
+</section>

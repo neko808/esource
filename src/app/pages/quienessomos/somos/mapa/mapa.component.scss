@@ -1,0 +1,123 @@
+/*       Cobertura       */
+#cobertura{
+	.box3{
+		width: 100%;
+		height: auto;
+		.flex3{
+			display: flex;
+			flex-wrap: wrap;
+			.barra3{
+				flex: 1;
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				position: relative;
+				&:first-child{
+					text-align: center;
+				}
+				&:last-child{
+					flex: 0 1 43%;
+					padding: 0 30px;
+				}
+				h2{
+					font-family: 'Poppins', sans-serif;
+					font-weight: 700;
+					font-size: 1.4em;
+					line-height: 28px;
+					color: #2487FC;
+					margin-bottom: 40px;
+				}
+				h3{
+					font-family: 'Poppins', sans-serif;
+					font-size: 1em;
+					letter-spacing: 0;
+					line-height: 20px;
+					font-weight: 300;
+					span{
+						font-family: 'Poppins', sans-serif;
+						font-weight: 700;
+					}
+				}
+				@media screen and (max-width: 480px){
+					flex: 0 1 100%;
+					&:last-child{
+						flex: 0 1 100%;
+						padding: 30px 30px;
+					}
+				}
+			}
+
+		}
+	}
+}
+
+
+.st0{fill:#C9CCE2;}
+.st1{fill:#417cff;}
+.st2{fill:#c8057f;}
+
+
+/*     Paises       */
+.svg-paises{
+	max-width: 600px;
+	width: 100%;
+}
+
+
+svg {
+  display: block;
+  width: 100%;
+}
+#paises *.on {
+  fill: red;
+}
+
+.lista-paises {
+  margin: 0;
+  padding: 0;
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  // columns: 100px auto;
+  // column-gap: 8px;
+  list-style: none;
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  right: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.lista-paises li {
+  font-family: 'Poppins', sans-serif;
+  padding: 2px 4px;
+  display: inline-block;
+  line-height: 22px;
+  // width: 100%;
+}
+.lista-paises li.on {
+  background: red;
+  color: white;
+  font-weight: bold;
+}
+@media screen and (max-width: 480px){
+	.lista-paises{
+		max-width: 100%;
+		margin-top: 20px;
+		position: relative;
+		text-align: center;
+		flex-direction: row;
+		justify-content: center;
+		li{
+			font-size: 13px;
+			padding: 4px 6px;
+		}
+	}
+}

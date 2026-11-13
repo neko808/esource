@@ -1,0 +1,227 @@
+<div class="space"></div>
+
+<div class="slider">
+    <div class="box">
+
+        <div class="wrapper">
+        
+            <div class="info">
+                <div class="title">
+                    <h2>Nuestro Blog</h2>
+                    <p>Aqui podrás encontrar las publicaciones más relevantes</p>
+
+                </div>                     
+            </div>
+        
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- BANNER POSTS -->
+
+<!--<section class="banners">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-xs-12" *ngFor="let data of filterRelevante(datas); index as i">
+                                                      
+                <div class="banner-wrapper">
+                           
+                    <a [routerLink]="['/pagina',data.id]" title="Leveling up in CSS">
+                        <div class="banner-wrapper-content">
+                            <h1 class="h2">{{ data.title }}</h1>
+
+                            <h3 class="mylittle">{{ data.description }}</h3>
+                            <time datetime="2016-01-18" class="">{{ data.fecha | date:'dd/MM/yyyy' }}</time>
+                        </div>
+                    </a>
+                    <img class="img-fluid"
+                        src="http://localhost:1337{{ data.image.url }}"
+                        alt="foto"
+                        width="100%" 
+                        data-rjs="2"
+                      />
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+
+<!-- <div class="col-md-6 col-xs-12">
+                <div class="banner-wrapper">
+                    <a routerLink="./pagina" title="Leveling up in CSS">
+                        <div class="banner-wrapper-content">
+                            <h1 class="h2">Migración de datos a la nube con Esource Capital</h1>
+                            <span class="category-tag category-tag-white">Google Cloud</span>
+                            <time datetime="2016-01-18" class="">Febrero 18, 2021</time>
+                        </div>
+                    </a>
+                    <img class="img-fluid" src="../../../../assets/img/blog/detalles/foto1.jpg" alt="Post Photo" data-rjs="2">
+                </div>
+            </div> -->
+<!-- end BANNER POSTS -->
+
+
+<!-- MAIN -->
+<main>
+    <div class="container">
+        <div class="row">
+
+            <!-- ARTICLES -->
+            <div class="col-lg-8 col-xs-12">
+                <section class="articles">
+
+            <article class="blue-article" *ngFor="let data of datas | paginate: { 
+                                                      itemsPerPage: 3, currentPage: page,
+                                                      totalItems: totalLength }; index as i">
+                        <div class="articles-header">
+                            <time>{{ data.fecha | date:'dd/MM/yyyy' }}</time>
+
+                            <span class="articles-header-tag-blue" 
+                            *ngIf='data?.relevante===true;'>relevante</span>
+                            <!--<ng-template #relevante>
+                                <span class="articles-header-tag-blue">relevante</span>
+                            </ng-template>-->
+
+
+
+
+                            <span class="articles-header-category">
+                                <a class="blue">{{ data.category.name }}</a>
+                            </span> 
+
+                        </div>
+                        <div class="articles-content">
+                            <h1><a title="">{{ data.title }}</a></h1>
+                           <!--<img *ngIf="!data.image" class="foto" [src]="data.image.url" alt="foto">-->
+
+            <div *ngIf="data.image">
+              <img
+                src="{{ data.image.url }}"
+                alt="foto"
+                width="100%"
+              />
+            </div>
+                    <h3 class="little">{{ data.description }}</h3>
+                    <p [innerHTML]="data.content | filter:90">{{ data.content | filter:90 }}</p>
+                            
+
+                        </div>
+                        <div class="articles-footer">
+
+<!--                             <ul class="articles-footer-info">
+                                <li><a href="#" class="light-link" title=""><i class="pe-7s-comment"></i> 7 Respuestas</a>
+                                </li>
+                                <li><a href="#" class="light-link" title=""><i class="pe-7s-like"></i> 1221</a></li>
+                            </ul> -->
+
+ <!--                            <a [routerLink]="['./pagina',i]" class="btn">Leer más</a> -->
+                        <!--     <button (click)="verItem(i)" type="button" class="btn">Leer más..</button> -->
+
+                            <a [routerLink]="['/pagina',data.id,data.slug]" class="btn">Leer más</a>
+                            
+
+                        </div>
+                    </article>
+
+                    <pagination-controls (pageChange)="page = $event;onPageChange($event)"></pagination-controls>
+
+                    <!--<pagination-controls (pageChange)="onPageChange($event)"></pagination-controls>-->
+
+
+
+
+                    <!-- PAGINATION -->
+<!--                     <nav aria-label="...">
+                        <a title="" href="#" class="btn-small-white pagination-back">Atras</a>
+                        <ul class="pagination">
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item page-item-more"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">25</a></li>
+                        </ul>
+                        <a title="" class="btn-small-white pagination-next">Adelante</a>
+                    </nav> -->
+
+
+
+
+
+                </section>
+            </div>
+
+
+
+
+            <!-- AUTHOR -->
+            <div class="aside-blocks col-lg-4 col-xs-12">
+                <aside class="author">
+                    <div class="barra">
+                        <h2>Publicaciones Relevantes</h2>
+
+                        
+
+
+                        <div *ngFor="let data of filterRelevante(datas); index as i" class="mylink">
+                            <a [routerLink]="['/pagina',data.id,data.slug]">
+                               <span class="author-info">{{ data.title }}</span>  
+                            </a>
+                        </div>
+                    </div>
+<!--                     <div class="social">
+                        <a href="#" title="Twitter"><i class="icon-social_twitter_circle"></i></a>
+                        <a href="#" title="Github"><i class="icon-social_github_circle"></i></a>
+                        <a href="#" title="LinkedIn"><i class="icon-social_linkedin_circle"></i></a>
+                    </div> -->
+<!--                <ul class="author-nav">
+                        <li><a href="#" title=""><i class="fa-twitter"></i> Publicaciones Recientes</a></li>
+                        <li><a href="#" title=""><i class="pe-7s-paper-plane"></i>Twitter</a></li>
+                    </ul> -->
+                </aside>
+
+                <aside class="categories">
+                    <h2 class="aside-title">Categorias</h2>
+                    <ul *ngFor="let categorie of categories; index as i">
+                        <li class="nav-elipse-blue"><a [routerLink]="['../categorias',categorie]" title="{{ categorie }}">{{ categorie }}</a></li>
+
+                    </ul>
+                </aside>
+
+   <!--              <aside class="advertisement">
+                    <a href=""><img src="img/advertisement.jpg" alt="Advertisement" data-rjs="2"></a>
+                </aside> -->
+
+<!--                 <aside class="last-project">
+                    <h2 class="aside-title">Noticia Relevante</h2>
+                    <div class="last-project-one">
+                        <h3 class="h4"><a class="work" href="#">Google Workspace</a></h3>
+                        <time datetime="2016-12-31T23:59:59Z">Febrero 18, 2021</time>
+                        <p class="font-primary">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Ex, tempora aliquam.... </p>
+                        <a href="#" title="Watch it" class="btn btn-small">Ver más</a>
+                    </div>
+                </aside> -->
+
+                <!--<aside class="tags">
+                    <h2 class="aside-title">Tags</h2>
+                    <div class="tags-content">
+                        <span class="tag tag-pill tag-default"><a href="#">Google Cloud</a></span>
+                        <span class="tag tag-pill tag-default"><a href="#">Artículos de Interés</a></span>
+                        <span class="tag tag-pill tag-default"><a href="#">Noticias</a></span>
+                        <span class="tag tag-pill tag-default"><a href="#">Transformación Digital</a></span>
+                    </div>
+                </aside>-->
+
+            </div>
+        </div>
+    </div>
+</main>
+<!-- end MAIN -->

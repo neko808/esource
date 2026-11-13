@@ -1,0 +1,12 @@
+<article class="intereses">
+    <div class="wrapper">
+        <h3>También le puede interesar</h3>
+        <div class="card-wrapper">
+            <div *ngFor="let interes of intereses" class="card" [routerLink]="interes.url">
+                <img class="img-icon" src="{{imgRef + interes.icon}}" alt="{{interes.name}}">
+                <a>{{interes.name}}</a>
+                <img class="arrow" src="../../../../assets/img/blue-arrow.svg" alt="arrow">
+            </div>
+        </div>
+    </div>
+</article>

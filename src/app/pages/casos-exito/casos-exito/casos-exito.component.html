@@ -1,0 +1,918 @@
+<div class="space"></div>
+
+<div class="lightgray">
+	<div class="slider">
+		<div class="slide">
+			<div class="shadow">
+			<div class="somos">
+				<div class="wrapper">
+					<div class="info anime-element fadeleft-animation">
+						<h2>{{ 'cloud.title795' | translate }}</h2>
+						<h3>{{ 'cloud.title795' | translate }}</h3>
+						<h4>{{ 'cloud.title796' | translate }}</h4>
+						<div class="sim-button button14" (click)='scroll(ibox)'>
+		                    <span>{{ 'cloud.title797' | translate }}</span>
+		                    <img class="arrow22" src="../../../../assets/img/arrow.svg" alt="arrow">
+		                </div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="primary" class="content-area">
+	<div class="wrap">
+
+		<section class="soluciones">
+
+			<div class="title">
+				<h3>{{ 'cloud.title798' | translate }}</h3>
+			</div>
+
+			<div class="barra8">
+<!-- 				<img class="myarrow" src="../../../../assets/img/exito/myarrow.svg" alt="arrow"> -->
+				<nav class="{{solution}}">
+		            <button [ngClass]="{'active': solution === 'panama'}" (click)="changeSolution('panama', '')">
+		                <p>{{ 'cloud.title799' | translate }}</p>
+		            </button>
+		            <button [ngClass]="{'active': solution === 'colombia'}" (click)="changeSolution('colombia', '')">
+		                <p>Colombia</p>
+		            </button>
+		            <button [ngClass]="{'active': solution === 'venezuela'}" (click)="changeSolution('venezuela', '')">
+		                <p>Venezuela</p>
+		            </button>
+
+		            <button [ngClass]="{'active': solution === 'mexico'}" (click)="changeSolution('mexico', '')">
+		                <p>{{ 'cloud.title800' | translate }}</p>
+		            </button>
+		            <button [ngClass]="{'active': solution === 'guatemala'}" (click)="changeSolution('guatemala', '')">
+		                <p>Guatemala</p>
+		            </button>
+		            <button [ngClass]="{'active': solution === 'argentina'}" (click)="changeSolution('argentina', '')">
+		                <p>Argentina</p>
+		            </button>
+		            <button [ngClass]="{'active': solution === 'nicaragua'}" (click)="changeSolution('nicaragua', '')">
+		                <p>Nicaragua</p>
+		            </button>
+		            <button [ngClass]="{'active': solution === 'america'}" (click)="changeSolution('america', '')">
+		                <p>{{ 'cloud.title801' | translate }}</p>
+		            </button>
+		            <button [ngClass]="{'active': solution === 'europa'}" (click)="changeSolution('europa', '')">
+		                <p>{{ 'cloud.title856' | translate }}</p>
+		            </button>
+		        </nav>
+	        </div>
+
+	        <div class="wrapper soluciones-wrap">
+            <!-- casos por pais -->
+            <div [ngClass]="{'active' : solution === 'panama'}" class="solucion">
+                <section id="cases">
+					<div class="barra">
+						<div class="fluid">
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/epasa-logo.jpg" alt="grupo epasa">
+								</div>
+								<div class="piece two">
+									<h2>Grupo Epasa</h2>
+									<p>{{ 'cloud.title799' | translate }}</p>
+									<p>{{ 'cloud.title802' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/epasa.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+										<button class="ibutton trigger">
+											{{ 'cloud.title824' | translate }}
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/casa-baterias-logo.jpg" alt="la casa de las baterias">
+								</div>
+								<div class="piece two">
+									<h2>La Casa de las Baterías</h2>
+									<p>{{ 'cloud.title799' | translate }}</p>
+									<p>{{ 'cloud.title803' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/baterias.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+										<button class="ibutton trigger">
+											{{ 'cloud.title824' | translate }}
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/hyundai-logo.jpg" alt="hyundai petroautos">
+								</div>
+								<div class="piece two">
+									<h2>Hyundai Petroautos</h2>
+									<p>{{ 'cloud.title799' | translate }}</p>
+									<p>{{ 'cloud.title804' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/hyundai.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+										<button class="ibutton trigger">
+											{{ 'cloud.title824' | translate }}
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/sportline-logo.jpg" alt="sportline america">
+								</div>
+								<div class="piece two">
+									<h2>Sportline America</h2>
+									<p>{{ 'cloud.title799' | translate }}</p>
+									<p>Retail</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/sla.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class=" piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/gala-logo.jpg" alt="grupo gala">
+								</div>
+								<div class="piece two">
+									<h2>Grupo Gala</h2>
+									<p>{{ 'cloud.title799' | translate }}</p>
+									<p>{{ 'cloud.title805' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/gala.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+										<button class="ibutton trigger">
+											{{ 'cloud.title824' | translate }}
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/plastiglas-logo.jpg" alt="plastiglas">
+								</div>
+								<div class="piece two">
+									<h2>Plastiglas</h2>
+									<p>{{ 'cloud.title799' | translate }}</p>
+									<p>{{ 'cloud.title806' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/plastiglas.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/roots-logo.jpg" alt="roots">
+								</div>
+								<div class="piece two">
+									<h2>Roots</h2>
+									<p>{{ 'cloud.title799' | translate }}</p>
+									<p>{{ 'cloud.title807' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/roots.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+										<button class="ibutton trigger">
+											{{ 'cloud.title824' | translate }}
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+            </div>
+            <div [ngClass]="{'active' : solution === 'colombia'}" class="solucion">
+                <section id="cases">
+					<div class="barra">
+						<div class="fluid">
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/Arturo-Calle-Log.jpg" alt="arturo Calle">
+								</div>
+								<div class="piece two">
+									<h2>Arturo Calle</h2>
+									<p>Colombia</p>
+									<p>{{ 'cloud.title808' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/calle.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+										<button class="ibutton trigger">
+											{{ 'cloud.title824' | translate }}
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/logos/alqueria-color.png" alt="alqueria">
+								</div>
+								<div class="piece two">
+									<h2>Familia Alquería</h2>
+									<p>Colombia</p>
+									<p>{{ 'cloud.title809' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/alqueria.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+										<button class="ibutton trigger">
+											{{ 'cloud.title824' | translate }}
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/hornitos-logo.jpg" alt="panaderia hornitos">
+								</div>
+								<div class="piece two">
+									<h2>Hornitos</h2>
+									<p>Colombia</p>
+									<p>{{ 'cloud.title810' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/hornitos.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+										<button class="ibutton trigger">
+											{{ 'cloud.title824' | translate }}
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+            </div>
+            <div [ngClass]="{'active' : solution === 'venezuela'}" class="solucion">
+                <section id="cases">
+					<div class="barra">
+						<div class="fluid">
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/banesco-color.png" alt="banesco">
+								</div>
+								<div class="piece two">
+									<h2>Banesco</h2>
+									<p>Venezuela</p>
+									<p>{{ 'cloud.title811' | translate }}</p>
+									<div class="xbox">
+										<button class="ibutton trigger">
+											{{ 'cloud.title824' | translate }}
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/casa-oliveira-logo.jpg" alt="casa oliveira">
+								</div>
+								<div class="piece two">
+									<h2>Casa Oliveira</h2>
+									<p>Venezuela</p>
+									<p>{{ 'cloud.title812' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/oliveira.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class=" piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/lamper-logo.jpg" alt="grupo lamper">
+								</div>
+								<div class="piece two">
+									<h2>Grupo Lamper</h2>
+									<p>Venezuela</p>
+									<p>{{ 'cloud.title813' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/lamper.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/sercoinfal-logo.jpg" alt="sercoinfal">
+								</div>
+								<div class="piece two">
+									<h2>Sercoinfal</h2>
+									<p>Venezuela</p>
+									<p>Alimentación</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/sercoinfal.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/sera-scandia-logo.jpg" alt="sera scandia">
+								</div>
+								<div class="piece two">
+									<h2>Sera Scandia</h2>
+									<p>América Latina</p>
+									<p>{{ 'cloud.title814' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/serascandia.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+            </div>
+            <div [ngClass]="{'active' : solution === 'mexico'}" class="solucion">
+                <section id="cases">
+					<div class="barra">
+						<div class="fluid">
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/inmegen.png" alt="inmegen">
+								</div>
+								<div class="piece two">
+									<h2>Inmegen</h2>
+									<p>{{ 'cloud.title800' | translate }}</p>
+									<p>{{ 'cloud.title815' | translate }}</p>
+									<div class="xbox">
+										<button class="ibutton trigger">
+											{{ 'cloud.title824' | translate }}
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class=" piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/BNI-Isologo.png" alt="bni estacionamientos">
+								</div>
+								<div class="piece two">
+									<h2>BNI Estacionamientos</h2>
+									<p>{{ 'cloud.title800' | translate }}</p>
+									<p>{{ 'cloud.title816' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/bni.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/pensulum-logo.jpg" alt="pendulum">
+								</div>
+								<div class="piece two">
+									<h2>Pendulum</h2>
+									<p>{{ 'cloud.title800' | translate }}</p>
+									<p>{{ 'cloud.title817' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/pendulum.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/quimcco-color.png" alt="quimmco">
+								</div>
+								<div class="piece two">
+									<h2>Quimmco</h2>
+									<p>{{ 'cloud.title800' | translate }}</p>
+									<p>{{ 'cloud.title818' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="https://workspace.google.com/customers/quimmco.html" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/ruz.jpg" alt="grupo ruz">
+								</div>
+								<div class="piece two">
+									<h2>Grupo Ruz</h2>
+									<p>{{ 'cloud.title800' | translate }}</p>
+									<p>Retail</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/ruz.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/fraiche-color.jpg" alt="fraiche">
+								</div>
+								<div class="piece two">
+									<h2>Fraiche</h2>
+									<p>{{ 'cloud.title800' | translate }}</p>
+									<p>Retail</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/FRAICHE.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+
+            </div>
+            <div [ngClass]="{'active' : solution === 'guatemala'}" class="solucion">
+                
+            	<section id="cases">
+					<div class="barra">
+						<div class="fluid">
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/pit-logo.jpg" alt="grupo pit">
+								</div>
+								<div class="piece two">
+									<h2>Grupo Pit</h2>
+									<p>Guatemala</p>
+									<p>{{ 'cloud.title809' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/pit.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+										<button class="ibutton trigger">
+											{{ 'cloud.title824' | translate }}
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+            </div>
+            <div [ngClass]="{'active' : solution === 'argentina'}" class="solucion">
+                <section id="cases">
+					<div class="barra">
+						<div class="fluid">
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/naranja-logo.jpg" alt="naranja x">
+								</div>
+								<div class="piece two">
+									<h2>Naranja X</h2>
+									<p>Argentina</p>
+									<p>Fintech</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/naranjax.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class=" piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/navent-logo.jpg" alt="navent">
+								</div>
+								<div class="piece two">
+									<h2>Navent</h2>
+									<p>Argentina</p>
+									<p>{{ 'cloud.title819' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/navent.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class=" piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/barbieri.jpg" alt="barbieri">
+								</div>
+								<div class="piece two">
+									<h2>AD Barbieri</h2>
+									<p>Argentina</p>
+									<p>{{ 'cloud.title820' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/barbieri.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class=" piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/simpa.jpg" alt="navent">
+								</div>
+								<div class="piece two">
+									<h2>Grupo Simpa</h2>
+									<p>Argentina</p>
+									<p>Retail</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/simpa.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+            </div>
+            <div [ngClass]="{'active' : solution === 'nicaragua'}" class="solucion">
+                <section id="cases">
+					<div class="barra">
+						<div class="fluid">
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/nicaragua-sugar-logo.jpg" alt="nicaragua sugar estates">
+								</div>
+								<div class="piece two">
+									<h2>Nicaragua Sugar Estates Limited</h2>
+									<p>Nicaragua</p>
+									<p>{{ 'cloud.title821' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/sugar.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+            </div>
+            <div [ngClass]="{'active' : solution === 'america'}" class="solucion">
+                <section id="cases">
+					<div class="barra">
+						<div class="fluid">
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/publicidad-comercial-logo.jpg" alt="publicidad comercial">
+								</div>
+								<div class="piece two">
+									<h2>Publicidad Comercial</h2>
+									<p>Centro América</p>
+									<p>{{ 'cloud.title822' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/publicidad.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+            </div>
+            <div [ngClass]="{'active' : solution === 'europa'}" class="solucion">
+                
+            	<section id="cases">
+					<div class="barra">
+						<div class="fluid">
+							<div class="box">
+								<div class="piece one">
+									<img class="ilogo" src="../../../../assets/img/exito/premier.jpg" alt="premier capital">
+								</div>
+								<div class="piece two">
+									<h2>Premier Capital</h2>
+									<p>{{ 'cloud.title856' | translate }}</p>
+									<p>{{ 'cloud.title817' | translate }}</p>
+									<div class="xbox">
+										<a class="ibutton" href="../../../../assets/img/exito/pdf/premiercapital.pdf" target="_blank">
+											{{ 'cloud.title823' | translate }}
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+            </div>
+
+        </div>
+			
+		</section>
+
+
+	</div>
+</div>
+
+
+<!--   epasa   -->
+<div class="modal">
+  <div class="modal-content">
+  	<span class="btn-close" (click)='closeVideo2()'>
+  		<img src="../../../../../assets/img/close.svg" alt="close">
+  	</span>
+    	<iframe id="player2" width="560" height="315" src="https://www.youtube.com/embed/EUjWFr3w7RU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--   baterias    -->
+<div class="modal">
+  <div class="modal-content">
+  	<span class="btn-close" (click)='closeVideo7()'>
+  		<img src="../../../../../assets/img/close.svg" alt="close">
+  	</span>
+    	<iframe id="player7" width="560" height="315" src="https://www.youtube.com/embed/-TuFChJ3a9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--   petroautos   -->
+<div class="modal">
+  <div class="modal-content">
+  	<span class="btn-close" (click)='closeVideo11()'>
+  		<img src="../../../../../assets/img/close.svg" alt="close">
+  	</span>
+    	<iframe id="player11" width="560" height="315" src="https://www.youtube.com/embed/2mPQTfQ_CLc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--   gala   -->
+<div class="modal">
+  <div class="modal-content">
+  	<span class="btn-close" (click)='closeVideo12()'>
+  		<img src="../../../../../assets/img/close.svg" alt="close">
+  	</span>
+    	<iframe id="player12" width="560" height="315" src="https://www.youtube.com/embed/DIsZOl27KFM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--   roots   -->
+<div class="modal">
+  <div class="modal-content">
+  	<span class="btn-close" (click)='closeVideo14()'>
+  		<img src="../../../../../assets/img/close.svg" alt="close">
+  	</span>
+    	<iframe id="player14" width="560" height="315" src="https://www.youtube.com/embed/dYl9PS-En4w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--   arturo calle    -->
+<div class="modal">
+  <div class="modal-content">
+  	<span class="btn-close" (click)='closeVideo6()'>
+  		<img src="../../../../../assets/img/close.svg" alt="close">
+  	</span>
+    	<iframe id="player6" width="560" height="315" src="https://www.youtube.com/embed/f0KDqYa1_9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--   alqueria   -->
+<div class="modal">
+  <div class="modal-content">
+  	<span class="btn-close" (click)='closeVideo8()'>
+  		<img src="../../../../../assets/img/close.svg" alt="close">
+  	</span>
+    	<iframe id="player8" width="560" height="315" src="https://www.youtube.com/embed/tOxm9xUBKvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--    hornitos   -->
+<div class="modal">
+  <div class="modal-content">
+  	<span class="btn-close" (click)='closeVideo10()'>
+  		<img src="../../../../../assets/img/close.svg" alt="close">
+  	</span>
+    	<iframe id="player10" width="560" height="315" src="https://www.youtube.com/embed/EQFqtLd7iRY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--   banesco iesa   -->
+<div class="modal">
+  <div class="modal-content">
+  	<span class="btn-close" (click)='closeVideo3()'>
+  		<img src="../../../../../assets/img/close.svg" alt="close">
+  	</span>
+    	<iframe id="player3" width="560" height="315" src="https://www.youtube.com/embed/3Ts5hIwg5VY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--   inmegen   -->
+<div class="modal">
+  <div class="modal-content">
+  	<span class="btn-close" (click)='closeVideo5()'>
+  		<img src="../../../../../assets/img/close.svg" alt="close">
+  	</span>
+    	<iframe id="player5" width="560" height="315" src="https://www.youtube.com/embed/B88dYrcEEFo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--    pit  -->
+<div class="modal">
+  <div class="modal-content">
+  	<span class="btn-close" (click)='closeVideo9()'>
+  		<img src="../../../../../assets/img/close.svg" alt="close">
+  	</span>
+    	<iframe id="player9" width="560" height="315" src="https://www.youtube.com/embed/702Hn_tU4FE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
+<div class="space"></div>
+
+<div id="primary" class="content-area">
+	<div class="wrap">
+
+		<section id="videos">
+			<div class="sbarra">
+				<div class="sfluid">
+					<div class="bos28">
+						<div class="title">
+							<h3>{{ 'cloud.title825' | translate }}</h3>
+						</div>
+					</div>
+
+					<carousel class="color"
+					[height]='370'
+					[margin]='20'
+					[autoplay]='true'
+					[autoplayInterval]='6000'
+					[transitionDuration]='400'
+					[pauseOnHover]='true'
+					[loop]='true'
+					>
+					    <div class="carousel-cell"> 
+					    	<div class="box12">
+					    		<div class="title"><h3>Grupo Epasa</h3></div>
+					    	</div>
+					    	<div class="boxvideo">
+					    		<iframe width="560" height="315" src="https://www.youtube.com/embed/EUjWFr3w7RU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					    	</div>
+					    	<div class="lower">
+					    		<a class="ibutton" href="https://www.youtube.com/watch?v=EUjWFr3w7RU&list=PLgJ32P5Wz8ETYruKxngDD9ifnP9CGak2g&index=4&t=30s" target="_blank">
+									<h3>{{ 'cloud.title826' | translate }}</h3>
+								</a>
+					    	</div>
+					    </div>
+
+					    <div class="carousel-cell"> 
+					    	<div class="box12">
+					    		<div class="title"><h3>Banesco</h3></div>
+					    	</div>
+					    	<div class="boxvideo">
+					    		<iframe width="560" height="315" src="https://www.youtube.com/embed/3Ts5hIwg5VY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					    	</div>
+					    	<div class="lower">
+					    		<a class="ibutton" href="https://www.youtube.com/watch?v=3Ts5hIwg5VY&list=PLgJ32P5Wz8ETYruKxngDD9ifnP9CGak2g&index=5&t=66s" target="_blank">
+									<h3>{{ 'cloud.title826' | translate }}</h3>
+								</a>
+					    	</div>
+					    </div>
+
+					    <div class="carousel-cell"> 
+					    	<div class="box12">
+					    		<div class="title"><h3>Inmegen</h3></div>
+					    	</div>
+					    	<div class="boxvideo">
+					    		<iframe width="560" height="315" src="https://www.youtube.com/embed/B88dYrcEEFo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					    	</div>
+					    	<div class="lower">
+					    		<a class="ibutton" href="https://www.youtube.com/watch?v=B88dYrcEEFo&list=PLgJ32P5Wz8ETYruKxngDD9ifnP9CGak2g&index=12&t=46s" target="_blank">
+									<h3>{{ 'cloud.title826' | translate }}</h3>
+								</a>
+					    	</div>
+					    </div>
+
+					    <div class="carousel-cell"> 
+					    	<div class="box12">
+					    		<div class="title"><h3>Arturo Calle</h3></div>
+					    	</div>
+					    	<div class="boxvideo">
+					    		<iframe width="560" height="315" src="https://www.youtube.com/embed/f0KDqYa1_9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					    	</div>
+					    	<div class="lower">
+					    		<a class="ibutton" href="https://www.youtube.com/watch?v=f0KDqYa1_9Y&list=PLgJ32P5Wz8ETYruKxngDD9ifnP9CGak2g&index=14&t=6s" target="_blank">
+									<h3>{{ 'cloud.title826' | translate }}</h3>
+								</a>
+					    	</div>
+					    </div>
+
+					    <div class="carousel-cell"> 
+					    	<div class="box12">
+					    		<div class="title"><h3>La casa de las baterías</h3></div>
+					    	</div>
+					    	<div class="boxvideo">
+					    		<iframe width="560" height="315" src="https://www.youtube.com/embed/-TuFChJ3a9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					    	</div>
+					    	<div class="lower">
+					    		<a class="ibutton" href="https://www.youtube.com/watch?v=-TuFChJ3a9c&list=PLgJ32P5Wz8ETYruKxngDD9ifnP9CGak2g&index=1&t=3s" target="_blank">
+									<h3>{{ 'cloud.title826' | translate }}</h3>
+								</a>
+					    	</div>
+					    </div>
+
+					    <div class="carousel-cell"> 
+					    	<div class="box12">
+					    		<div class="title"><h3>Alquería</h3></div>
+					    	</div>
+					    	<div class="boxvideo">
+					    		<iframe width="560" height="315" src="https://www.youtube.com/embed/tOxm9xUBKvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					    	</div>
+					    	<div class="lower">
+					    		<a class="ibutton" href="https://www.youtube.com/watch?v=tOxm9xUBKvI&list=PLgJ32P5Wz8ETYruKxngDD9ifnP9CGak2g&index=10&t=1s" target="_blank">
+									<h3>{{ 'cloud.title826' | translate }}</h3>
+								</a>
+					    	</div>
+					    </div>
+
+					    <div class="carousel-cell"> 
+					    	<div class="box12">
+					    		<div class="title"><h3>Grupo pit</h3></div>
+					    	</div>
+					    	<div class="boxvideo">
+					    		<iframe width="560" height="315" src="https://www.youtube.com/embed/702Hn_tU4FE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					    	</div>
+					    	<div class="lower">
+					    		<a class="ibutton" href="https://www.youtube.com/watch?v=702Hn_tU4FE&list=PLgJ32P5Wz8ETYruKxngDD9ifnP9CGak2g&index=15&t=47s" target="_blank">
+									<h3>{{ 'cloud.title826' | translate }}</h3>
+								</a>
+					    	</div>
+					    </div>
+
+					    <div class="carousel-cell"> 
+					    	<div class="box12">
+					    		<div class="title"><h3>Hornitos</h3></div>
+					    	</div>
+					    	<div class="boxvideo">
+					    		<iframe width="560" height="315" src="https://www.youtube.com/embed/EQFqtLd7iRY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					    	</div>
+					    	<div class="lower">
+					    		<a class="ibutton" href="https://www.youtube.com/watch?v=EQFqtLd7iRY&list=PLgJ32P5Wz8ETYruKxngDD9ifnP9CGak2g&index=11&t=1s" target="_blank">
+									<h3>{{ 'cloud.title826' | translate }}</h3>
+								</a>
+					    	</div>
+					    </div>
+
+					    <div class="carousel-cell"> 
+					    	<div class="box12">
+					    		<div class="title"><h3>Hyundai Petroautos</h3></div>
+					    	</div>
+					    	<div class="boxvideo">
+					    		<iframe width="560" height="315" src="https://www.youtube.com/embed/2mPQTfQ_CLc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					    	</div>
+					    	<div class="lower">
+					    		<a class="ibutton" href="https://www.youtube.com/watch?v=2mPQTfQ_CLc&list=PLgJ32P5Wz8ETYruKxngDD9ifnP9CGak2g&index=6" target="_blank">
+									<h3>{{ 'cloud.title826' | translate }}</h3>
+								</a>
+					    	</div>
+					    </div>
+
+					    <div class="carousel-cell"> 
+					    	<div class="box12">
+					    		<div class="title"><h3>Grupo Gala</h3></div>
+					    	</div>
+					    	<div class="boxvideo">
+					    		<iframe width="560" height="315" src="https://www.youtube.com/embed/DIsZOl27KFM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					    	</div>
+					    	<div class="lower">
+					    		<a class="ibutton" href="https://www.youtube.com/watch?v=DIsZOl27KFM&list=PLgJ32P5Wz8ETYruKxngDD9ifnP9CGak2g&index=2&t=9s" target="_blank">
+									<h3>{{ 'cloud.title826' | translate }}</h3>
+								</a>
+					    	</div>
+					    </div>
+
+					</carousel>
+
+				</div>
+			</div>
+		</section>
+
+	</div>
+</div>
+
+
+
+
+
+<div #ibox style="margin-bottom: -40px;">
+   <app-form></app-form> 
+</div>

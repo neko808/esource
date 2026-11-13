@@ -1,0 +1,78 @@
+<div id="slider-wrapper" [ngClass]="slide">
+
+    <nav>
+        <div class="nav-btn" (click)="setSlide(0)">
+            <span></span>
+        </div>
+        <div class="nav-btn" (click)="setSlide(1)">
+            <span></span>
+        </div>
+        <div class="nav-btn" (click)="setSlide(2)">
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="slider">
+        <div class="slide">
+
+            <div class="gcloud" [ngClass]="{'active' : slide === 'gcloud'}">
+         
+                <div class="wrapper">
+                    <div class="info">
+                        <div class="barra">
+                            <img class="gocloud" src="../../../../assets/img/gocloud.svg" alt="google cloud">
+                        </div>
+                        <h3 class="titulo yellow">{{ 'cloud.title16' | translate }}<span>{{ 'cloud.title17' | translate }}</span></h3>
+                        <h4>{{ 'cloud.title18' | translate }}</h4>
+                        <div class="sim-button button14" routerLink="./gcp">
+                            <span>{{ 'cloud.title19' | translate }}</span>
+                            <img class="arrow22" src="../../../../assets/img/arrow.svg" alt="arrow">
+                        </div>
+
+                    </div>
+                </div>
+           
+            </div>
+
+            <div class="work" [ngClass]="{'active' : slide === 'work'}">
+            	<div class="sombra">
+                <div class="wrapper">
+                    <!-- <img class="img" src="#" alt="work"> -->
+                    <div class="info">
+                        <h3 class="titulo">{{ 'cloud.title20' | translate }}<span>{{ 'cloud.title21' | translate }}</span></h3>
+                        <h4>{{ 'cloud.title22' | translate }}</h4>
+                        <div class="sim-button button14" routerLink="./" fragment="iform">
+                            <span>{{ 'cloud.title23' | translate }}</span>
+                            <img class="arrow22" src="../../../../assets/img/arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="gsuite" [ngClass]="{'active' : slide === 'gsuite'}">
+            	
+                <div class="wrapper">
+<!--                     <img class="img" src="../../../../assets/img/box.png" alt="workspace"> -->
+                    <div class="info">
+                        <div class="barra">
+                            <img class="workspace" src="../../../../assets/img/box.png" alt="google workspace">
+                        </div>
+                        <h3 class="dark">{{ 'cloud.title24' | translate }}<br><span>{{ 'cloud.title25' | translate }}</span></h3>
+                        <h4 class="dark">{{ 'cloud.title26' | translate }}</h4>
+<!--                         <a routerLink="/industrias/retail">Ver más</a> -->
+                        <div class="sim-button button14" routerLink="./workspace">
+                            <span>{{ 'cloud.title27' | translate }}</span>
+                            <img class="arrow22" src="../../../../assets/img/arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            
+        </div>
+    </div>
+
+
+</div>

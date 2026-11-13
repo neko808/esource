@@ -1,0 +1,26 @@
+section{
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: -40px;
+    
+    --light-gray: #dcdcdc;
+    --gray-ligth: #eff1f5;
+    --gray-dark: rgba(36,63,109,.2);
+    font-family: "Poppins", helvetica, arial, sans-serif;
+    h1,h2,h3,h4,h5,p,a,button{
+        font-family: "Poppins", helvetica, arial, sans-serif;
+    }
+    p, a{
+        color: #131529;
+    }
+    @mixin absoluteCenter {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

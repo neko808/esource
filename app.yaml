@@ -1,0 +1,26 @@
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+
+handlers:
+  - url: /(.*\.(gif|png|jpg|css|js|svg|json)(|\.map))$
+    static_files: dist/esource-web/\1
+    upload: dist/esource-web/(.*)(|\.map)
+
+  - url: /(.*)
+    static_files: dist/esource-web/index.html
+    upload: dist/esource-web/index.html
+    secure: always
+    redirect_http_response_code: 301
+    
+
+skip_files:
+  - e2e/
+  - node_modules/
+  - src/
+  - ^(.*/)?\..*$
+  - ^(.*/)?.*\.json$
+  - ^(.*/)?.*\.md$
+  - ^(.*/)?.*\.yaml$
+  - ^LICENSE
