@@ -34,7 +34,7 @@
     "bootstrap": "^4.6.0",
     "firebase": "^8.3.0",
     "googleapis": "^68.0.0",
-    "gsap": "3.6.0",
+    "gsap": "file:gsap-bonus.tgz",
     "jquery": "^3.5.1",
     "jquery-autocomplete": "^1.2.8",
     "jquery-ui": "^1.12.1",
