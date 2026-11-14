@@ -1,0 +1,9 @@
+{
+  "framework": null,
+  "installCommand": "npm install",
+  "buildCommand": "NODE_OPTIONS=--openssl-legacy-provider npx ng build --prod",
+  "outputDirectory": "dist/esource-web",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
